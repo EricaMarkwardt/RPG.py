@@ -1,9 +1,9 @@
 hero = {
-    "name": ("\U0001F9DD"),
+    "name": ("\U0001F9DD 'Arwen'"),
     "level": 10,
     "health": 75,
     "equipment": {"amulet", "quiver", "chain mail"},
-    "attacks": (("\U0001F3C7", 8), ("\U0001F93A", 9), ("\U0001F3F9", 7)),
+    "attacks": (("hunstman", 8), ("swordsman", 9), ("archer", 7)),
     "coins": {
         "copper": 5,
         "silver": 6,
@@ -14,6 +14,10 @@ hero = {
         "pleas": ["'You have the gift of foresight, tell me what you have seen!'", "'Frodo, don't give in! Not now!'", "'Let him be spared. Save him'"],
     }
 }
+
+hunstman = "\U0001F3C7"
+swordsman = "\U0001F93A"
+archer = "\U0001F3F9"
 
 # print("Your hero is: Arwen")
 # print(hero["name"])

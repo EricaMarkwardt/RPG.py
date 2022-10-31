@@ -1,10 +1,10 @@
 print("")
 villain_3 = {
-    "name": ("\U0001F9DF"),
+    "name": ("\U0001F9DF 'Walker'"),
     "level": 10,
     "health": 75,
     "equipment": {"spare arm", "heavy chain", "shopping cart"},
-    "attacks": (("\U0001F32C", 10), ("\U0001F9E0", 7), ("\U0001F3CB", 7)),
+    "attacks": (("bad breath", 10), ("brain consumption", 7), ("super strength", 7)),
     "coins": {
         "copper": 9,
         "silver": 5,
@@ -15,6 +15,11 @@ villain_3 = {
         "pleas": ["'Mwaaaa.'", "'Sluuuurp.'", "'Gurrrrrgle.'"],
     }
 }
+
+bad_breath = "\U0001F32C"
+brain_consumption = "\U0001F9E0"
+super_strength = "\U0001F3CB"
+
 # print("Your villain is: Walker")
 # print(villain_3["name"])
 # print("")

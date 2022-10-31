@@ -1,26 +1,18 @@
-from Hero import hero
-from Villain_1 import villain_1
-from Villain_2 import villain_2
-from Villain_3 import villain_3
-import Fun_features #will have to access each part with Fun_features.
+import Hero
+import Villain_1
+import Villain_2
+import Villain_3
 import random
 print("")
-Fun_features.slow_print("\033[38;5;206mInto the fire")
-print("")
-Fun_features.slow_print("\033[38;5;206mYour quest, should you choose to accept, will be filled with trials and tears; though not all from sadness.")
+print
 
-# (5 points): As a user, I want the ability to select my Hero’s attacks based on my input.  
+# (5 points): As a user, I want my Hero or Enemy’s health to decrease based on the power of the successful attack. 
 
-print(hero["attacks"])
-
-
-# (5 points): As a user, I want the Enemy’s attack to be chosen at random.
-
-
-
-#(5 points): As a user, I want my Hero or Enemy’s health to decrease based on the power of the successful attack. 
+winner_health = 
  
 # (2.5 points): As a user, I want the results of each attack to be printed to the terminal.
+
+print (winner_health)
 
 # (10 points): As a user, I want to be able to “loot” defeated enemies, which will include: 
 # Adding the Enemy’s equipment to the hero character’s equipment Set 

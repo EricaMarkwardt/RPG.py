@@ -1,10 +1,13 @@
+from turtle import speed
+
+
 print("")
 villain_1 = {
-    "name": ("\U0001F47E"),
+    "name": ("\U0001F47E 'FLying Spaghetti Monster'"),
     "level": 6,
     "health": 90,
     "equipment": {"collander", "ladle", "the Gospel of the Flying Spaghetti Monster"},
-    "attacks": (("\U0001F407", 6), ("\U0001F40D", 5), ("\U0001F989", 10)),
+    "attacks": (("speed", 6), ("venom", 5), ("silent flight", 10)),
     "coins": {
         "copper": 8,
         "silver": 4,
@@ -15,6 +18,11 @@ villain_1 = {
         "pleas": ["'Please don't eat me!'", "'Not that noodle! Any noodle but that one!'", "'I'm coming undone!'"],
     }
 }
+
+speed = "\U0001F407"
+venom = "\U0001F40D"
+silent_flight = "\U0001F989"
+
 # print("Your villain is: Flying Spaghetti Monster")
 # print(villain_1["name"])
 # print("")

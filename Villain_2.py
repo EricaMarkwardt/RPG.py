@@ -1,10 +1,13 @@
+from turtle import speed
+
+
 print("")
 villain_2 = {
-    "name": ("\U0001F977"),
+    "name": ("\U0001F977 'Mandarin'"),
     "level": 9,
     "health": 85,
     "equipment": {"yoroi armor", "helmet", "katana"},
-    "attacks": (("\U0001F40D", 5), ("\U0001F93A", 10), ("\U0001F407", 8)),
+    "attacks": (("venom", 5), ("swordsman", 10), ("speed", 8)),
     "coins": {
         "copper": 7,
         "silver": 3,
@@ -15,6 +18,11 @@ villain_2 = {
         "pleas": ['Please, not the hair!', "Tony, where are you?!", "Not back to Jiang Nan!"],
     }
 }
+
+venom = "\U0001F40D"
+swordsman = "\U0001F93A"
+speed = "\U0001F407"
+
 # print("Your villain is: Mandarin")
 # print(villain_2["name"])
 # print("")
