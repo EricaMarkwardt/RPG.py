@@ -1,18 +1,58 @@
-import Hero
-import Villain_1
-import Villain_2
-import Villain_3
+from Hero import hero
+from Villain_1 import villain_1
+from Villain_2 import villain_2
+from Villain_3 import villain_3
+from Fun_features import slow_print 
 import random
-print("")
-print
+
+def display_welcome():
+    print("")
+    slow_print("\033[38;5;206mFollow me Into The Fire")
+    print("")
+    slow_print("On our journey, we will find treasure beyond measure, courageous battles, laughter, and tears") 
+
+def choose_your_attack():
+
+    choose_your_hero_attack = input(f"How should {hero['name']} attack her enemy? {hero_attack} ")
+    slow_print(f"You have chosen {choose_your_hero_attack}")
+
+def battle(hero,enemy):
+    slow_print(f"Your hero is {hero['name']}.")
+    while hero["health"] > 0 and enemy["health"] > 0:
+        hero_attack = (hero["attacks"][0]) # I would make a funciton that allows user to pick attack and then returns the selected value
+        enemy_attack = random.choice(enemy["attacks"])
+        slow_print(f"Your enemy's attack is {enemy_attack[0]} and does {enemy_attack[1]} damage.")
+        enemy['health'] -= hero_attack[1]
+        print(f'{enemy["name"]} was attacked by {hero["name"]} for {hero_attack[1]} damage leaving them with {enemy["health"]} health remaining')
+        hero['health'] -= enemy_attack[1]
+        print(f'hero attacked by enemy, fix statement next ')
+    # here outside of our while loop we can assume there will only be 1 person left standing     
+def run_game():
+    # Game_functions.display_welcome() #TESTED
+    battle(hero,villain_1) 
+    battle(hero,villain_2) 
+# print("")
+# print
+
+
+
+
+
+
+# here we will reduce the hero's health by damaage of enemy attack
+# now subtract hero's damage from enemy's health
+
+# report the news/ use print to show user results
+# After Testing a single attack, try using a while loop
+# use the hero and villian health values as the conditions
 
 # (5 points): As a user, I want my Hero or Enemy’s health to decrease based on the power of the successful attack. 
 
-winner_health = 
+# winner_health = 
  
 # (2.5 points): As a user, I want the results of each attack to be printed to the terminal.
 
-print (winner_health)
+# print (winner_health)
 
 # (10 points): As a user, I want to be able to “loot” defeated enemies, which will include: 
 # Adding the Enemy’s equipment to the hero character’s equipment Set 
